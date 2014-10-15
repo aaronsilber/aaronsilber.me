@@ -1,6 +1,6 @@
 {
-  "name": "aaronthesilbercom",
-  "version": "0.0.0",
+  "name": "aaronsilber.me",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "keystone": "~0.2.27",
@@ -13,7 +13,7 @@
     "npm": ">=1.3.14"
   },
   "scripts": {
-    "start": "node keystone.js"
+    "start": "js keystone.js"
   },
   "main": "keystone.js"
 }
