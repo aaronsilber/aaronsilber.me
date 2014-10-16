@@ -43,9 +43,11 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
+
 			div(role="header").site-head.page-header.text-center
 				h1
-					a(href='/') aaronsilber.me
+					br
+					a(href='/') <b>aaronsilber</b>.me
 
 			div(role="navigation").navbar.navbar-default
 				.container-fluid
@@ -80,7 +82,6 @@ html
 			//- Flash messages allow you to display once-off status messages to users, e.g. form
 			//- validation errors, success messages, etc.
 			+flash-messages(messages)
-
 			//- The content block should contain the body of your template's content
 			block content
 

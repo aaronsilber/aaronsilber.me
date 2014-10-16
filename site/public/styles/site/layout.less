@@ -15,9 +15,15 @@
     height: auto;
 }
 
+.site-head > h1 > a
+{
+ // color:#ffffff;
+}
+
 .site-head a:hover
 {
   text-decoration:none;
+ // color:#bbbbbb;
 }
 @media (min-width: 768px) {
   #nav-center {
@@ -29,9 +35,41 @@
   .navbar .navbar-collapse {
     text-align: center;
   }
+  .navbar-nav li
+  {
+    margin-left:10px;
+    margin-right:10px;
+  }
 }
 
 #face
 {
   width:200px;
 }
+.navbar-default
+{
+  border-color:#cccccc;
+  background-color:#eeeeee;
+}
+.jumbotron
+{
+  background-color:#eeeeee;
+}
+/*
+.nav > li
+{
+  border-right: 1px #aaaaaa solid;
+}
+.nav:first-child
+{
+  border-left: 1px #aaaaaa solid;
+}*/
+@media (min-width: 768px) {
+  .codebtn {
+    padding-bottom: 0px;
+  }
+}
+  .container > .page-header
+  {
+    border:none;
+  }
