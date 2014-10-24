@@ -2,4 +2,17 @@ extends ../layouts/default
 
 block content
 	.container: .jumbotron
-		h1 portfolio
+		h1 Portfolio
+		- for (var j = 0; j < portfolioPieces.length; j++)
+			if (j == 0 || j % 3 == 0)
+				.row
+					- for (var i = j; i < (3 + j); i++ )
+						- if (i >= portfolioPieces.length) break;
+						.col-lg-4
+							.colbox
+								- piece = portfolioPieces[i];
+								a(href="/portfolio/"+piece.href)
+									img(src='/images/'+piece.thumb)
+									h2= piece.header
+									div= piece.body+" "
+										span.year= piece.time
