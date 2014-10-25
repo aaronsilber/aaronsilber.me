@@ -5,9 +5,6 @@ block content
 		div.pull-right.thumbnail
 			img(src='/images/nws-sms.png').picframe
 			div.caption.text-center NWS SMS
-		h1 JavaGaits
-			p This site grew up out of it's predecessor "aaronthesilber.com". I wanted to build an experience that was high-performance, simple and easy on the eye. In the end, I decided to build the site on KeystoneJS. Although it has a MongoDB backing, at this time, it's not extensively used.
-			p Nginx is configured as a reverse-proxy for node itself, handling TLS in the process.
-			p The server is an Ubuntu virtual machine running on SSD hardware over at DigitalOcean.com. All the internal management of the site is performed over SSH and the server has been hardened to a number of attacks.
-			p Root login is disabled. Password auth is disabled. Only select users even can logon, those that can must pass publickey authentication. Fail2ban is configured to manage auto-banning on brute force attacks.
-			p Check out the source code to the site while you're at it. It's <a href="https://github.com/aaronsilber/aaronsilber.me/" target="_blank">over at Github</a>.
+		h1 Severe Weather SMS Alerts
+			p The National Weather Service is usually pretty on top of its game. Whether we would receive any of their warnings when it really mattered, working fields with almost no cellular coverage and no room for radios, is another matter.
+			p This code project was concocted after realizing what many of us had in the field already: we could receive text messages. A Weather.gov scrape script and some Twilio and cronjob hacking later, and SMS notifications could reach us and warn us of severe weather alerts.
